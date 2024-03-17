@@ -12,8 +12,8 @@ public class SubtractionOperationStrategyTest extends AbstractTwoOperandsOperati
         SubtractionOperationStrategy strategy = new SubtractionOperationStrategy();
         double result = strategy.calculate(1,2);
         assertEquals(-1.0,result);
-        result = strategy.calculate(1,-2);
-        assertEquals(3.0,result);
+        result = strategy.calculate(3.2,2.5);
+        assertEquals(0.7,result);
     }
 
     @Test

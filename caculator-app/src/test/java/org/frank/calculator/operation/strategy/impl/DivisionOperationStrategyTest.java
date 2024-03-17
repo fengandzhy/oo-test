@@ -13,8 +13,8 @@ public class DivisionOperationStrategyTest extends AbstractTwoOperandsOperationT
         DivisionOperationStrategy strategy = new DivisionOperationStrategy();
         double result = strategy.calculate(6,2);
         assertEquals(3.0,result);
-        result = strategy.calculate(1,-2);
-        assertEquals(-0.5,result);
+        result = strategy.calculate(0.3,-0.2);
+        assertEquals(-1.5,result);
     }
 
     @Test

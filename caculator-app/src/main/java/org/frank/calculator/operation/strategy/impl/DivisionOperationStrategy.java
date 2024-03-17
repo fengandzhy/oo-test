@@ -5,6 +5,8 @@ import org.frank.calculator.operation.AbstractTwoOperandsOperation;
 import org.frank.calculator.operation.strategy.OperationStrategy;
 import org.jetbrains.annotations.NotNull;
 
+import java.math.BigDecimal;
+
 public class DivisionOperationStrategy extends AbstractTwoOperandsOperation implements OperationStrategy {
     @Override
     public double calculate(@NotNull double ... operands) {
@@ -12,6 +14,9 @@ public class DivisionOperationStrategy extends AbstractTwoOperandsOperation impl
         if(operands[1] == 0){
             throw new CalculatorException("The division is zero");
         }
-        return operands[0] / operands[1];
+        BigDecimal dividend = new BigDecimal(String.valueOf(operands[0]));
+        BigDecimal divisor = new BigDecimal(String.valueOf(operands[1]));
+        BigDecimal result = dividend.divide(divisor);
+        return result.doubleValue();
     }
 }

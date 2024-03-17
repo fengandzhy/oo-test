@@ -12,8 +12,8 @@ public class AdditionOperationStrategyTest extends AbstractTwoOperandsOperationT
         AdditionOperationStrategy strategy = new AdditionOperationStrategy();
         double result = strategy.calculate(1,2);
         assertEquals(3.0,result);
-        result = strategy.calculate(1,-2);
-        assertEquals(-1.0,result);       
+        result = strategy.calculate(0.7,-2.1);
+        assertEquals(-1.4,result);       
     }
 
     @Test

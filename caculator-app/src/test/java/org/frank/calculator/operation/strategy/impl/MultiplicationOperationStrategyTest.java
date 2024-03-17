@@ -12,8 +12,8 @@ public class MultiplicationOperationStrategyTest extends AbstractTwoOperandsOper
         MultiplicationOperationStrategy strategy = new MultiplicationOperationStrategy();
         double result = strategy.calculate(6,2);
         assertEquals(12.0,result);
-        result = strategy.calculate(1,-2);
-        assertEquals(-2,result);
+        result = strategy.calculate(0.3,-0.5);
+        assertEquals(-0.15,result);
     }
 
     @Test
