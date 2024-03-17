@@ -1,6 +1,7 @@
 package org.frank.calculator.exception;
 
-import com.sun.istack.internal.NotNull;
+
+import org.jetbrains.annotations.NotNull;
 
 public class CalculatorException extends RuntimeException{
     

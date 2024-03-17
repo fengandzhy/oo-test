@@ -1,6 +1,6 @@
 package org.frank.calculator.parser;
 
-import com.sun.istack.internal.NotNull;
+import org.jetbrains.annotations.NotNull;
 import org.frank.calculator.bean.ExpressionBean;
 import org.frank.calculator.exception.CalculatorException;
 

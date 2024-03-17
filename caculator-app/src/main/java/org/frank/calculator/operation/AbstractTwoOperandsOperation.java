@@ -1,6 +1,6 @@
 package org.frank.calculator.operation;
 
-import com.sun.istack.internal.NotNull;
+import org.jetbrains.annotations.NotNull;
 import org.frank.calculator.exception.CalculatorException;
 
 public abstract class AbstractTwoOperandsOperation {

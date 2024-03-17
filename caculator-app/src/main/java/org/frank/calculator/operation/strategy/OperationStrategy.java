@@ -1,6 +1,6 @@
 package org.frank.calculator.operation.strategy;
 
-import com.sun.istack.internal.NotNull;
+import org.jetbrains.annotations.NotNull;
 
 public interface OperationStrategy {
     double calculate(@NotNull double ... operands);

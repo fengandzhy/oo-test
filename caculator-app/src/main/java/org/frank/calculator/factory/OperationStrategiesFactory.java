@@ -1,8 +1,9 @@
 package org.frank.calculator.factory;
 
-import com.sun.istack.internal.NotNull;
+
 import org.frank.calculator.exception.CalculatorException;
 import org.frank.calculator.operation.strategy.OperationStrategy;
+import org.jetbrains.annotations.NotNull;
 
 import java.io.IOException;
 import java.io.InputStream;
