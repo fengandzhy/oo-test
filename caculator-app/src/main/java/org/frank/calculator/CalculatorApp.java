@@ -15,7 +15,7 @@ public class CalculatorApp {
         scanner.close();
         Parser parser = new Parser();
         ExpressionBean bean = parser.parse(expression);
-        OperationStrategiesFactory factory = new OperationStrategiesFactory(ClassLoader.getSystemResourceAsStream("application.properties"));
+        OperationStrategiesFactory factory = new OperationStrategiesFactory(CalculatorApp.class.getClassLoader().getSystemResourceAsStream("application.properties"));
         OperationStrategy operationStrategy = factory.createOperationStrategy(bean.getOperation());
         double result = operationStrategy.calculate(bean.getOperands());
         print(result);    
